@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<link rel="stylesheet" href="css/clonedFCCsurveyForm.css">
+	<title>Cloned freeCodeCamp Survey Form</title>
+</head>
+
+<body>
+	<div class="container">
+		<h1 id="title"> Cloned freeCodeCamp Survey Form</h1>
+		<p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+		<form id="survey-form">
+			<fieldset>
+				<label id="name-label">Name</label>
+				<input id="name" type="text" placeholder=" Enter your name" required />
+				<label id="email-label">Email</label>
+				<input id="email" type="email" placeholder=" Enter your Email" required />
+				<label id="number-label">Age</label>
+				<input id="number" type="number" placeholder=" Age" min="0" max="60" />
+				<label>Which option best describes your current Role?<label>
+						<select id="dropdown">
+							<option disabled selected>Select current role</option>
+							<option value="student">Student</option>
+							<option value="fullTimeJob">Fulltime Job</option>
+							<option value="fullTimeLearner">Fulltime Learner</option>
+							<option value="preferNotToSay">Prefer not to say</option>
+							<option value="others">Others</option>
+						</select>
+			</fieldset>
+			<fieldset>
+				<label>Would you recommend freecodeCamp to a friend?</label>
+				<label><input type="radio" name="radioResponse" value="definitely" checked> Definitely</label>
+				<label><input type="radio" name="radioResponse" value="maybe"> Maybe</label>
+				<label><input type="radio" name="radioResponse" value="notSure"> Not sure</label>
+			</fieldset>
+			<fieldset>
+				<label>What is your favorite feature of freeCodeCamp</label>
+				<select>
+					<option disabled selected>Select an option</option>
+					<option value="challenges">Challenges</option>
+					<option value="projects">Projects</option>
+					<option value="community">Community</option>
+					<option value="openSource">Open Source</option>
+				</select>
+			</fieldset>
+			<fieldset>
+				<label>What would you like to see imrpoved?(Check all that apply)</label>
+				<label><input type="checkbox" value="frontEndProjects"> Front-end Projects</label>
+				<label><input type="checkbox" value="backEndProjects"> Back-end Projects</label>
+				<label><input type="checkbox" value="dataVisualization"> Data Visualization</label>
+				<label><input type="checkbox" value="challenges"> Challenges</label>
+				<label><input type="checkbox" value="openSourceCommunity"> Open Source Community</label>
+				<label><input type="checkbox" value="gitterHelpRooms"> Gitter help rooms</label>
+				<label><input type="checkbox" value="videos"> Videos</label>
+				<label><input type="checkbox" value="cityMeetups"> City Meetups</label>
+				<label><input type="checkbox" value="wiki"> Wiki</label>
+				<label><input type="checkbox" value="wiki"> Forum</label>
+				<label><input type="checkbox" value="additionalCourses"> Additional Courses</label>
+			</fieldset>
+			<fieldset>
+				<label>Any Comments or suggestions?</label>
+				<textarea placeholder="Enter your comment here..." rows="10"></textarea>
+			</fieldset>
+			<div class="div-button">
+				<input id="submit" type="submit">
+			</div>
+		</form>
+	</div>
+</body>
+
+</html>
